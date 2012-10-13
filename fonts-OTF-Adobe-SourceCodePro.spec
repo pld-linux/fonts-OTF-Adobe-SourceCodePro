@@ -1,9 +1,10 @@
-%define		_name	SourceCodePro
+# NOTE: there are also TTF fonts in tarball
 Summary:	Adobe Source Code Pro - A set of OpenType fonts for coders
-Name:		fonts-OTF-Adobe-%{_name}
+Summary(pl.UTF-8):	Adobe Source Code Pro - zbiór fontów OpenType dla programistów
+Name:		fonts-OTF-Adobe-SourceCodePro
 Version:	1.010
 Release:	1
-License:	OFL
+License:	OFL v1.1
 Group:		Fonts
 Source0:	http://downloads.sourceforge.net/sourcecodepro.adobe/SourceCodePro_FontsOnly-%{version}.zip
 # Source0-md5:	b13521e8ff303f6940509f3dde96aec3
@@ -19,6 +20,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Source Sans is a set of monospaced OpenType fonts that have been
 designed to work well coding environments.
+
+%description -l pl.UTF-8
+Source Sans to zbiór fontów OpenType o stałej szerokości znaku,
+zaprojektowany z myślą o środowiskach programistycznych.
 
 %prep
 %setup -q -n SourceCodePro_FontsOnly-%{version}
@@ -42,6 +47,7 @@ fontpostinst OTF
 
 %files
 %defattr(644,root,root,755)
-%{otffontsdir}/*.otf
+%doc LICENSE.txt ReadMe.html SourceCodeProReadMe.html
+%{otffontsdir}/SourceCodePro-*.otf
 %{_sysconfdir}/fonts/conf.d/%{name}.conf
 %{_datadir}/fontconfig/conf.avail/%{name}.conf
