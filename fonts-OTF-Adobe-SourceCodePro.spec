@@ -2,12 +2,12 @@
 Summary:	Adobe Source Code Pro - A set of OpenType fonts for coders
 Summary(pl.UTF-8):	Adobe Source Code Pro - zbiór fontów OpenType dla programistów
 Name:		fonts-OTF-Adobe-SourceCodePro
-Version:	1.013
+Version:	1.017
 Release:	1
 License:	OFL v1.1
 Group:		Fonts
 Source0:	http://downloads.sourceforge.net/sourcecodepro.adobe/SourceCodePro_FontsOnly-%{version}.zip
-# Source0-md5:	2be9df0e711b4bdbf5c313d8bceb37d7
+# Source0-md5:	e59ce4be04d44c22e380865142bad0e3
 Source1:	%{name}-fontconfig.conf
 URL:		http://sourceforge.net/projects/sourcecodepro.adobe/
 BuildRequires:	unzip
