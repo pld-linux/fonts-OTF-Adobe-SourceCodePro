@@ -6,10 +6,10 @@ Version:	1.017
 Release:	1
 License:	OFL v1.1
 Group:		Fonts
-Source0:	http://downloads.sourceforge.net/sourcecodepro.adobe/SourceCodePro_FontsOnly-%{version}.zip
-# Source0-md5:	e59ce4be04d44c22e380865142bad0e3
+Source0:	https://github.com/adobe-fonts/source-code-pro/archive/%{version}R.tar.gz
+# Source0-md5:	6f8609cb05afbafc01a5b4d5b7c99cc7
 Source1:	%{name}-fontconfig.conf
-URL:		http://sourceforge.net/projects/sourcecodepro.adobe/
+URL:		http://adobe-fonts.github.io/source-code-pro/
 BuildRequires:	unzip
 Requires(post,postun):	fontpostinst
 BuildArch:	noarch
@@ -26,7 +26,7 @@ Source Sans to zbiór fontów OpenType o stałej szerokości znaku,
 zaprojektowany z myślą o środowiskach programistycznych.
 
 %prep
-%setup -q -n SourceCodePro_FontsOnly-%{version}
+%setup -q -n source-code-pro-%{version}R
 
 %install
 rm -rf $RPM_BUILD_ROOT
