@@ -9,7 +9,7 @@ Version:	%{version_roman}.%{version_italic}
 Release:	1
 License:	OFL v1.1
 Group:		Fonts
-Source0:	https://github.com/adobe-fonts/source-code-pro/archive/%{version_roman}R-ro%2f%{version_italic}R-it.tar.gz
+Source0:	https://github.com/adobe-fonts/source-code-pro/archive/%{version_roman}R-ro%2f%{version_italic}R-it.tar.gz?/SourceCodePro-%{version_roman}R-ro-%{version_italic}R-it.tar.gz
 # Source0-md5:	8120607f75da3b25cb8e34b64f02af9c
 Source1:	%{name}-fontconfig.conf
 URL:		http://adobe-fonts.github.io/source-code-pro/
