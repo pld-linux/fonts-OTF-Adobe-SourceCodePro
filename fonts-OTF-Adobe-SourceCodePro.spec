@@ -13,7 +13,6 @@ Source0:	https://github.com/adobe-fonts/source-code-pro/archive/%{version_roman}
 # Source0-md5:	8120607f75da3b25cb8e34b64f02af9c
 Source1:	%{name}-fontconfig.conf
 URL:		http://adobe-fonts.github.io/source-code-pro/
-BuildRequires:	unzip
 Requires(post,postun):	fontpostinst
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
